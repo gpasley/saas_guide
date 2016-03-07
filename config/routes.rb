@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   
   
+  devise_for :users
   resources :weather_grid
-  
+    
   root to: "home#index"
   
   # The priority is based upon order of creation: first created -> highest priority.
