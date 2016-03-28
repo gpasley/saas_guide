@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   
   devise_for :users
   resources :weather_grid
+  resources :subscriptions
     
   root to: "home#index"
   
